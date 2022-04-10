@@ -151,7 +151,7 @@ int StartServer(int currentFD)
 		return -1;
 	};
 
-	cout << "서버가 정상적으로 실행되었습니다!" << endl;
+	cout << "Server is On the way" << endl;
 
 	//당신은 모든 시련을 훌륭하게 이겨내셨습니다
 	return 1;
