@@ -130,7 +130,7 @@ int StartServer(int currentFD)
 	//실제 서버 IP를 여기에서 넣어주도록 합시다!
 	address.sin_addr.s_addr = inet_addr(SEVER_PRIVATE_IP);
 	//포트까지 적어주어야 했었죠?
-	address.sin_port = hton(SEVER_PORT);
+	address.sin_port = htons(SEVER_PORT);
 
 	//주소가 여기에요 로 끝난다면 서버가 실행이 안될 거에요! 저장만 한 것이죠!
 	//사용해서 서버를 만들어야 할 거니까!
