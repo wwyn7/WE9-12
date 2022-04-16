@@ -86,7 +86,7 @@ int main()
 		//연결을 시도하고 싶어하는 소켓을 새로 준비합니다! 준비하기 위한 새로운 공간을 만들기 위한 공간?
 		struct sockaddr_in connectSocket;
 		//연결하고자 하는 소켓의 주소 사이즈!
-		struct socklen_t addressSize;
+		class socklen_t addressSize;
 
 		//누가 부르던데요? 0이면 아무도 대답안했다! 15라고 하면, 15명이 부른다!
 		if (result > 0)
