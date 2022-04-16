@@ -97,7 +97,7 @@ int main()
 			{
 				cout << "Someone Connected!" << endl;
 				//저희는 서버죠! 서버는요 누군가 들어오고 시다면 밴된 아이피가 아니라고 한다면야.. 다 받아줘야 합니다!
-				int currentFD = accept(ListenFD, (struct sockaddr*)&connectSocket, &addressSize);
+				int currentFD = accept(ListenFD.fd, (struct sockaddr*)&connectSocket, &addressSize);
 
 				//0번을 리슨 소켓으로 쓰고 있어서 전체 유저 수를 -1 한 상태에서 비교할게요!
 				if (currentUserNumber < MAX_USER_NUMBER - 1)
